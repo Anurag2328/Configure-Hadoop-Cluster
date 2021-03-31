@@ -1,2 +1,2 @@
-# Task_11.1
-Configuring hadoop cluster (NameNode and DataNode) using Ansible.
+# Task_11.3
+making restarting service idempotent in nature using handlers in ansible.
