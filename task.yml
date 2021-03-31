@@ -1,0 +1,23 @@
+- hosts: localhost
+  tasks:
+  - name: "Instaling apache-HTTPD" 
+    package:
+      name: "httpd"
+      state: present
+
+  - name: "deployiing webpages"
+    template:
+      src: "/ws_task_11.3/test.html"
+      dest: "/var/www/html"
+  
+    notify: "restart_httpd"
+
+ 
+
+  handlers:
+  - name: "restart_httpd"
+    service:
+      name: "httpd"
+      state: restarted
+
+     
