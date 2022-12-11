@@ -1,4 +1,4 @@
-# Task_11.1
+# Hadoop Cluster
 Configuring hadoop cluster (NameNode and DataNode) using Ansible.
 
 In this article we are performing 2 Tasks
